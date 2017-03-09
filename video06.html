@@ -1,0 +1,92 @@
+<!--
+Layout Responsive Fluid Columns Using CSS
+Video: https://egghead.io/lessons/css-introduction-to-css-columns
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eee;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 0 2rem;
+        margin: 0 auto;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        padding: 0.5rem 0;
+      }
+
+      a {
+        padding: 2px 5px;
+        border-radius: 3px;
+        color: #1A4390;
+      }
+
+      a:hover {
+        text-decoration: none;
+        background-color: #1A3490;
+        color: #FFF;
+      }
+
+      nav {
+        /*columns: 4 150px;*/
+        column-count: 4; /* acts like max-count */
+        column-width: 150px; /* acts like min-width */
+        column-gap: 3rem; /* gap/gutter between columns */
+        column-rule: 1px dashed #ccc;
+        column-fill: balance; /* balance, auto */
+      }
+
+      h2 {
+        column-span: all; /* not widely supported */
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+     <h2>News</h2>
+     <nav>
+       <ul>
+         <li><a href="#">World</a></li>
+         <li><a href="#">U.S.</a></li>
+         <li><a href="#">Politics</a></li>
+         <li><a href="#">Business</a></li>
+         <li><a href="#">Sports</a></li>
+         <li><a href="#">Health</a></li>
+         <li><a href="#">Tech</a></li>
+         <li><a href="#">Science</a></li>
+         <li><a href="#">Education</a></li>
+         <li><a href="#">Books</a></li>
+         <li><a href="#">Food</a></li>
+         <li><a href="#">Movies</a></li>
+         <li><a href="#">TV</a></li>
+         <li><a href="#">Automobiles</a></li>
+         <li><a href="#">Real Estate</a></li>
+         <li><a href="#">Jobs</a></li>
+         <li><a href="#">Art & Design</a></li>
+         <li><a href="#">Travel</a></li>
+         <li><a href="#">Subscribe</a></li>
+         <li><a href="#">Archives</a></li>
+       </ul>
+     </nav>
+    </section>
+  </body>
+</html>
