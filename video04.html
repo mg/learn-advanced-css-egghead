@@ -1,0 +1,68 @@
+<!--
+Dynamically Size Elements with Pure CSS
+Video: https://egghead.io/lessons/css-dynamically-size-elements-with-pure-css
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: monospace;
+      }
+
+      p {
+        margin: 0;
+        font-size: 2rem;
+        padding: 0 5rem;
+        text-shadow: 1px 1px #333;
+        color: #fff;
+      }
+
+      section {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      section:nth-of-type(1) {
+        background-image: url('https://unsplash.it/1024/683?image=1068')
+      }
+
+      section:nth-of-type(2) {
+        background-image: url('https://unsplash.it/1024/683?image=1073')
+      }
+
+      section:nth-of-type(3) {
+        background-image: url('https://unsplash.it/1024/683?image=1047')
+      }
+
+      section:nth-of-type(4) {
+        background-image: url('https://unsplash.it/1024/683?image=1032')
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>asdf kjasdfæ ljsadfæ kljsadfæl jasdæflkj</p>
+    </section>
+    <section>
+      <p>asdf kjasdfæ ljsadfæ kljsadfæl jasdæflkj</p>
+    </section>
+    <section>
+      <p>asdf kjasdfæ ljsadfæ kljsadfæl jasdæflkj</p>
+    </section>
+    <section>
+      <p>asdf kjasdfæ ljsadfæ kljsadfæl jasdæflkj</p>
+    </section>
+  </body>
+</html>
